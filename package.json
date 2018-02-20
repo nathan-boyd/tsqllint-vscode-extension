@@ -20,6 +20,7 @@
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^6.0.88",
+		"jest": "^22.3.0",
 		"tslint": "^5.9.1",
 		"typescript": "^2.5.2",
 		"vsce": "^1.35.0"
@@ -31,6 +32,7 @@
 		"compile:client": "tsc -p client/tsconfig.json",
 		"watch:client": "tsc -w -p client/tsconfig.json",
 		"compile:server": "cd server && npm run installServer && cd .. && tsc -p server/tsconfig.json",
-		"watch:server": "cd server && npm run installServer && cd .. && tsc -w -p server/tsconfig.json"
+		"watch:server": "cd server && npm run installServer && cd .. && tsc -w -p server/tsconfig.json",
+		"test": "jest"
 	}
 }
